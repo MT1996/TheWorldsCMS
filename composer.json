@@ -1,0 +1,20 @@
+{
+  "require": {
+    "php": "^7.3",
+    "ext-mysqli": "*",
+    "ext-http": "*",
+    "ext-json": "*",
+    "ext-zend-opcache": "*",
+    "symfony/yaml": "^4.2",
+    "theworldscms/journey": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "vendor-dir": "./Packages/Libraries"
+  },
+  "scripts": {
+    "post-package-install": "TheWorldsCMS\\Journey\\Composer\\Scripts::postUpdateAndInstallCommand",
+    "post-package-update": "TheWorldsCMS\\Journey\\Composer\\Scripts::postUpdateAndInstallPackage"
+  }
+}
