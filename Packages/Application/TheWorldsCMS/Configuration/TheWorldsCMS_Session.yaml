@@ -1,0 +1,6 @@
+`ID`               INTEGER      NOT NULL AUTO_INCREMENT,
+`Erstellungsdatum` DATETIME     NOT NULL,
+`SessionID`        VARCHAR(255) NOT NULL,
+`UserID`           INTEGER      NOT NULL,
+PRIMARY KEY (`ID`),
+FOREIGN KEY (`UserID`) REFERENCES theworldscms_user(`ID`)

@@ -1,0 +1,6 @@
+`TabellenID`   INTEGER NOT NULL AUTO_INCREMENT,
+`ProjektID` INTEGER,
+`UserID`    INTEGER,
+PRIMARY KEY (`TabellenID`),
+FOREIGN KEY (`ProjektID`) REFERENCES theworldscms_project (`ID`),
+FOREIGN KEY (`UserID`) REFERENCES theworldscms_user (`ID`)

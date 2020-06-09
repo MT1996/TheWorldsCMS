@@ -1,0 +1,29 @@
+tableName: theworldscms_projekt
+properties: {
+  {
+    name: "ID",
+    type: "INTEGER",
+    constraints: {
+      "NOT NULL", "AUTO_INCREMENT"
+    }
+  },
+  {
+    name: "Name",
+    type: "VARCHAR(255)",
+    constraints: {
+       "NOT NULL"
+    }
+  },
+  {
+    name: "Erstellungsdatum"
+    type: "DATE"
+    constraints: {
+       "NOT NULL"
+    }
+  },
+  {
+    additionalConstraints: {
+      primaryKey: "ID"
+    }
+  }
+}

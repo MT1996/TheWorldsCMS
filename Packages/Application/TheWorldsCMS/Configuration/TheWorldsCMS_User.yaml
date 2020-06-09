@@ -1,0 +1,9 @@
+`ID`               INTEGER      NOT NULL AUTO_INCREMENT,
+`Vorname`          varchar(255) NOT NULL,
+`Nachname`         VARCHAR(255) NOT NULL,
+`Email`            VARCHAR(255) NOT NULL,
+`Passwort`         varchar(255) NOt null,
+`AuthorizationKey` varchar(255) NOT NULL,
+`RollenNamen`      INTEGER      not null,
+PRIMARY KEY (`ID`),
+FOREIGN KEY (`RollenNamen`) REFERENCES theworldscms_rolle (`ID`)

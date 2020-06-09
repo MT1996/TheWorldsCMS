@@ -1,0 +1,4 @@
+`ID`          INTEGER      NOT NULL,
+`Name`        VARCHAR(255) NOT NULL,
+`Privilegien` INTEGER      NOT NULL,
+PRIMARY KEY (`ID`)
